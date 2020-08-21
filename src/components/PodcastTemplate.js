@@ -1,9 +1,6 @@
 import React from 'react'
-{/* todo
-    need to come up with design and style this
-*/}
 
-function EachPodcast({
+function PodcastTemplate({
     podcasttitle,
     date,
     seasonep,
@@ -23,4 +20,4 @@ function EachPodcast({
     )
 }
 
-export default EachPodcast
+export default PodcastTemplate

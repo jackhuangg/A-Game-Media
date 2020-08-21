@@ -2,6 +2,7 @@ import React, {useState } from 'react'
 import db from '../firebase'
 
 function Admin() {
+    const [pickpodcast, setpodcast] = useState('')
     const [podcasttitle, setpodcasttitle] = useState('')
     const [podcastdate, setpodcastdate] = useState('')
     const [podcastseasonep, setpodcastseasonep] = useState('')
@@ -11,7 +12,7 @@ function Admin() {
 
     const sendpodcast = e =>{
         e.preventDefault();
-        db.collection('podcasts').add({
+        db.collection(pickpodcast).add({
             podcasttitle:podcasttitle,
             date:podcastdate,
             seasonep:podcastseasonep,
@@ -19,6 +20,7 @@ function Admin() {
             mp4link:podcastmp4,
             shownotes:podcastshownotes
         })
+        setpodcast('')
         setpodcasttitle('')
         setpodcastdate('')
         setpodcastseasonep('')
@@ -30,6 +32,12 @@ function Admin() {
     return (
         <div>
           <form>
+              <input
+              onChange={(e) => setpodcast(e.target.value)}
+              value={pickpodcast}
+              placeholder="agametalks or unathletic? type exact"
+              type="text"
+              />
               <input
               onChange={(e) => setpodcasttitle(e.target.value)}
               value={podcasttitle}

@@ -1,7 +1,8 @@
 import firebase from 'firebase'
+require('dotenv').config()
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCXAgfS7FNEsyv7wKh7rTgRMMEC1fWSz_4",
+    apiKey: process.env.API_KEY,
     authDomain: "agamemedia-afa09.firebaseapp.com",
     databaseURL: "https://agamemedia-afa09.firebaseio.com",
     projectId: "agamemedia-afa09",

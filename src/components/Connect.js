@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Blog() {
+function Connect() {
     return (
         <div>
-            <h1>Blog</h1> 
+            <h1>Connect</h1>
         </div>
     )
 }
 
-export default Blog
+export default Connect

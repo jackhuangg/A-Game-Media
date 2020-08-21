@@ -1,0 +1,25 @@
+.navbar-brand{ 
+    font-weight: bold;
+    font-size: 48px !important;
+}
+.bar{
+    background-color: #25262B !important;
+}
+#responsive-navbar-nav{
+    font-size: 25px;
+    justify-content: flex-end;
+}
+.nav-link{
+    color: white!important;
+    padding: 0 30px 0 30px!important;
+    transition: ease .5s;
+}
+.nav-link:hover{
+    color: #FF7A00 !important;
+}
+
+@media(max-width: 950px){
+    .navbar-brand{
+        font-size: 30px !important;
+    }
+}

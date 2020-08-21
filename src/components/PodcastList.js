@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react'
-import EachPodcast from './EachPodcast'
+import PodcastTemplate from './PodcastTemplate'
 import db from '../firebase'
 
-function Podcasts() {
-    const [podcasts,setPodcasts] = useState([]);
+function PodcastList(props) {
+    const [PodcastList,setPodcastList] = useState([]);
     useEffect(() => {
-        db.collection('podcasts').onSnapshot(snapshot => (
-            setPodcasts(snapshot.docs.map(doc => doc.data()))
+        db.collection(props.channel).onSnapshot(snapshot => (
+            setPodcastList(snapshot.docs.map(doc => doc.data()))
         ))
-    }, [])
+    },)
     return (
         <div>
-            {podcasts.map(podcast => (
-                <EachPodcast
+            {PodcastList.map(podcast => (
+                <PodcastTemplate
                 podcasttitle={podcast.podcasttitle}
                 date={podcast.date}
                 seasonep={podcast.seasonep}
@@ -25,5 +25,5 @@ function Podcasts() {
     )
 }
 
-export default Podcasts
+export default PodcastList
 

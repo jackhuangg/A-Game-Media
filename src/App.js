@@ -1,9 +1,11 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import Navbar from './components/Navbars';
 import About from './components/About';
-import Blog from './components/Blog';
-import Podcasts from './components/Podcasts';
+import BlogList from './components/BlogList';
+import PodcastList from './components/PodcastList';
+import PodcastMenu from './components/PodcastMenu'
+import Connect from './components/Connect'
 import Admin from './components/Admin'
 
 import {
@@ -21,11 +23,22 @@ function App() {
           <Route path="/About" component={About}>
             <About />
           </Route>
-          <Route path="/Blog" component={Blog}>
-            <Blog />
+          <Route path="/Blog" component={BlogList}>
+            <BlogList />
           </Route>
-          <Route path="/Podcasts" component={Podcasts}>
-            <Podcasts />
+          <Route path="/Podcasts" component={PodcastMenu}>
+            <PodcastMenu />
+          </Route>
+          <Route path="/UnAthletic" component={PodcastList}>
+            <PodcastList channel="unathletic"/> 
+            {/* passes in respective channel's name so podcast component
+            only prints out specific channel PodcastList */}
+          </Route>
+          <Route path="/A-Game-Talks" component={PodcastList}>
+            <PodcastList channel="agametalks"/>
+          </Route>
+          <Route path="/Connect" component={Connect}>
+            <Connect />
           </Route>
           <Route path="/Admin" component={Admin}>
             <Admin />
