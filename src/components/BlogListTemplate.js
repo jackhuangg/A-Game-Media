@@ -1,9 +1,17 @@
 import React from 'react'
+import '../styles/BlogListTemplate.css'
 
-function BlogListTemplate() {
+function BlogListTemplate({
+    title,
+    summary,
+    image,
+})
+ {
     return (
-        <div>
-            <h1>i am a blog</h1>
+        <div className="BlogBlock">
+            <img src={image}></img>
+            <h1>{title}</h1>
+            <p>{summary}</p>
         </div>
     )
 }

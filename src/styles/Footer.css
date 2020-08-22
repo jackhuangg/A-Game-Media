@@ -1,0 +1,30 @@
+footer{
+    margin-top: auto;
+}
+.Icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0 !important;
+}
+li{
+    display: inline-block;
+    padding: 20px 20px
+}
+.Copyright{
+    text-align: center;
+    font-size: 12px;
+}
+.Icons img{
+    max-width: 30px;
+}
+
+@media(max-width:900px){
+    .Icons img{
+        max-width: 25px;
+    }
+}

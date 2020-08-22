@@ -1,0 +1,16 @@
+.Introduction{
+    text-align: center;
+}
+.Introduction h3{
+    padding: 20px 15%;
+}
+.BlogList{
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width: 900px){
+    .BlogList{
+        flex-direction: column;
+    }
+}

@@ -1,12 +1,16 @@
 import React from 'react';
 import './styles/App.css';
+
 import Navbar from './components/Navbars';
+import Home from './components/Home'
 import About from './components/About';
 import BlogList from './components/BlogList';
 import PodcastList from './components/PodcastList';
 import PodcastMenu from './components/PodcastMenu'
 import Connect from './components/Connect'
+import Footer from './components/Footer'
 import Admin from './components/Admin'
+
 
 import {
   BrowserRouter as Router,
@@ -20,6 +24,9 @@ function App() {
       <Navbar/>
       <Router>
         <Switch>
+          <Route path="/Home" component={Home}>
+            <Home />
+          </Route>
           <Route path="/About" component={About}>
             <About />
           </Route>
@@ -45,6 +52,7 @@ function App() {
           </Route>
         </Switch>
     </Router>
+    <Footer/>
     </div>
   );
 }
