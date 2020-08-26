@@ -6,12 +6,12 @@ footer{
     justify-content: center;
     flex-direction: column;
 }
-ul{
+.Icons ul{
     display: flex;
     justify-content: center;
     margin-bottom: 0 !important;
 }
-li{
+.Icons li{
     display: inline-block;
     padding: 20px 20px
 }

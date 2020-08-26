@@ -26,6 +26,7 @@ function BlogList() {
                     title = {blog.title}
                     summary = {blog.summary}
                     image = {blog.image}
+                    url={blog.url}
                     />
                 ))}
             </div>

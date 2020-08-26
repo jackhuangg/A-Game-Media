@@ -5,6 +5,7 @@ function BlogListTemplate({
     title,
     summary,
     image,
+    url,
 })
  {
     return (
@@ -12,6 +13,7 @@ function BlogListTemplate({
             <img src={image}></img>
             <h1>{title}</h1>
             <p>{summary}</p>
+            <a href={url}>Read More...</a>
         </div>
     )
 }

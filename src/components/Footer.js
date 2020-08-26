@@ -8,11 +8,11 @@ function Footer() {
         <footer>
             <div className="Icons">
                 <ul>
-                    <li><a href="www.facebook.com"><img src={facebook}></img></a></li>
-                    <li><a href="www.facebook.com"><img src={facebook}></img></a></li>
-                    <li><a href="www.facebook.com"><img src={facebook}></img></a></li>
-                    <li><a href="www.facebook.com"><img src={facebook}></img></a></li>
-                    <li><a href="www.facebook.com"><img src={facebook}></img></a></li>
+                    <li><a href="https:/www.facebook.com"><img src={facebook}></img></a></li>
+                    <li><a href="https:/www.facebook.com"><img src={facebook}></img></a></li>
+                    <li><a href="https:/www.facebook.com"><img src={facebook}></img></a></li>
+                    <li><a href="https:/www.facebook.com"><img src={facebook}></img></a></li>
+                    <li><a href="https:/www.facebook.com"><img src={facebook}></img></a></li>
                 </ul>
                 <p className="Copyright">© Copyright 2020. All Rights Reserved By A-Game Media Co.</p>
             </div>

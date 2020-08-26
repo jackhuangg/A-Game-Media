@@ -1,0 +1,31 @@
+.AlignOuterBox{
+    display: flex;
+    justify-content: center;
+}
+
+.OuterBox{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+.OuterBox h3{
+    color: #AAAAAA !important;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.InnerBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media(max-width:1000px){
+    .OuterBox{
+        width: 60%;
+    }
+}
+@media(max-width:600px){
+    .OuterBox h3{
+        text-align:center;
+    }
+}

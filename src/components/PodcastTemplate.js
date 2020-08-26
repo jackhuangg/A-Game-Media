@@ -1,4 +1,7 @@
 import React from 'react'
+import '../styles/PodcastTemplate.css'
+import playbutton from '../images/playbutton.png'
+import companylogo from '../images/logo.jpeg'
 
 function PodcastTemplate({
     podcasttitle,
@@ -10,12 +13,18 @@ function PodcastTemplate({
 }) {
     return (
         <div>
-            <h1>{podcasttitle}</h1>
-            <p>{date}</p>
-            <p>{seasonep}</p>
-            <p>{logo}</p>
-            <p>{mp4link}</p>
-            <p>{shownotes}</p>
+            <div className="TemplateBox">
+                <div className="PlayButtonSection">
+                    <img src={playbutton}></img>
+                </div>
+                <div className="TitleDateSection">
+                    <h2>{podcasttitle}</h2>
+                    <p>{date}</p>
+                </div>
+                <div className="LogoSection">
+                    <img src={companylogo}></img>
+                </div>
+            </div>
         </div>
     )
 }
