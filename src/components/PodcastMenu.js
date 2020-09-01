@@ -15,11 +15,11 @@ function PodcastMenu() {
             </div>
             <div className="DisplayCard">
                 <div className="Card">
-                    <a href="UnAthletic"><img src={logo}></img></a>
+                    <a href="UnAthletic"><img alt="UnAthletic"src={logo}></img></a>
                     <p>UnAthletic</p>
                 </div>
                 <div className="Card">
-                    <a href="A-Game-Talks"><img src={logo}></img></a>
+                    <a href="A-Game-Talks"><img alt="A-Game-Talks" src={logo}></img></a>
                     <p>A-Game Talks</p>
                 </div>
             </div>

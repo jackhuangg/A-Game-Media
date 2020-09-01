@@ -1,25 +1,25 @@
-.navbar-brand{ 
-    font-weight: bold;
-    font-size: 48px !important;
+.navbar-brand {
+  font-weight: bold;
+  font-size: 48px !important;
 }
-.bar{
-    background-color: #25262B !important;
+.bar {
+  background-color: #25262b !important;
 }
-#responsive-navbar-nav{
-    font-size: 25px;
-    justify-content: flex-end;
+#responsive-navbar-nav {
+  font-size: 25px;
+  justify-content: flex-end;
 }
-.nav-link{
-    color: white!important;
-    padding: 0 30px 0 30px!important;
-    transition: ease .5s;
+.nav-link {
+  color: white !important;
+  padding: 0 30px 0 30px !important;
+  transition: ease 0.5s;
 }
-.nav-link:hover{
-    color: #FF7A00 !important;
+.nav-link:hover {
+  color: #ff7a00 !important;
 }
 
-@media(max-width: 950px){
-    .navbar-brand{
-        font-size: 30px !important;
-    }
+@media (max-width: 950px) {
+  .navbar-brand {
+    font-size: 30px !important;
+  }
 }

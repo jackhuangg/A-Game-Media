@@ -1,57 +1,58 @@
-.BlogBlock{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px 40px;
-    align-items: center;
-    justify-content: space-between;
+.BlogBlock {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 40px;
+  align-items: center;
+  justify-content: space-between;
 }
-.BlogBlock img{
-    width: 250px !important;
-    height: 250px !important;
+.BlogBlock img {
+  width: 250px !important;
+  height: 250px !important;
 }
-.BlogBlock h1{
-    margin-top: 8px;
-    font-size: 21px;
+.BlogBlock h1 {
+  margin-top: 8px;
+  font-size: 21px;
 }
-.BlogBlock p{
-    font-size: 17px;
+.BlogBlock p {
+  font-size: 17px;
 }
-.BlogBlock a{
-    background-color: #FF7A00;
-    border-radius: 15px;
-    border: none;
-    color: white !important;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none !important;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+.BlogBlock a {
+  background-color: #ff7a00;
+  border-radius: 15px;
+  border: none;
+  color: white !important;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 .BlogBlock a:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
-
-@media(max-width: 1000px){
-    .BlogBlock{
-        width: 100%;
-    }
-    .BlogBlock p{
-        width: 75%;
-    }
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-@media(min-width:1680px){
-    .BlogBlock h1{
-        font-size: 28px;
-    }
-    .BlogBlock p{
-        font-size: 21px;
-    }
-    .BlogBlock{
-        width: 530px;
-    }
+
+@media (max-width: 1000px) {
+  .BlogBlock {
+    width: 100%;
+  }
+  .BlogBlock p {
+    width: 75%;
+  }
+}
+@media (min-width: 1680px) {
+  .BlogBlock h1 {
+    font-size: 28px;
+  }
+  .BlogBlock p {
+    font-size: 21px;
+  }
+  .BlogBlock {
+    width: 530px;
+  }
 }

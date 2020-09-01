@@ -1,34 +1,39 @@
-.Introduction{
-    text-align: center;
+.Introduction {
+  text-align: center;
 }
-.Introduction h3{
-    padding: 20px 15%;
+.Introduction h3 {
+  padding: 20px 15%;
 }
-.DisplayCard{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.DisplayCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.Card{
-    display: flex;
-    flex-direction: column;
+.Card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
-.Card img{
-    width: 450px !important;
+.Card:hover {
+  transform: scale(1.05);
+  z-index: 100;
+  background: transparent;
 }
-.Card p{
-    padding-top: 15px;
-    font-size: 20px;
+.Card img {
+  width: 450px !important;
+}
+.Card p {
+  padding-top: 15px;
+  font-size: 20px;
 }
 
-@media(max-width: 1100px){
-    .DisplayCard{
-        flex-direction: column;
-    }
-    .Card{
-        text-align: center;
-    }
-    .Card img{
-        width: 60% !important;
-    }
+@media (max-width: 1100px) {
+  .DisplayCard {
+    flex-direction: column;
+  }
+  .Card img {
+    width: 60% !important;
+  }
 }
