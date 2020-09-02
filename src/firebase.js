@@ -3,13 +3,13 @@ require("dotenv").config();
 
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
-  authDomain: "agamemedia-afa09.firebaseapp.com",
-  databaseURL: "https://agamemedia-afa09.firebaseio.com",
+  authDomain: process.env.DOMAIN,
+  databaseURL: process.env.URL,
   projectId: "agamemedia-afa09",
-  storageBucket: "agamemedia-afa09.appspot.com",
-  messagingSenderId: "305838427170",
-  appId: "1:305838427170:web:615021a8e0369cd652ce7b",
-  measurementId: "G-RK3JWTXLHK",
+  storageBucket: process.env.BUCKET,
+  messagingSenderId: process.env.SENDER_ID,
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID,
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
