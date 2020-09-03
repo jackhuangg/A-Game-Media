@@ -3,7 +3,7 @@ import "./styles/App.css";
 
 import Navbar from "./components/Navbars";
 import Home from "./components/Home";
-import About from "./components/About";
+// import About from "./components/About";
 import BlogList from "./components/BlogList";
 import PodcastList from "./components/PodcastList";
 import PodcastMenu from "./components/PodcastMenu";
@@ -20,12 +20,12 @@ function App() {
       <Navbar />
       <Router>
         <Switch>
-          <Route path="/Home" exact component={Home}>
+          <Route path="/" exact component={Home}>
             <Home />
           </Route>
-          <Route path="/About" component={About}>
+          {/* <Route path="/About" component={About}>
             <About />
-          </Route>
+          </Route> */}
           <Route path="/Blog" component={BlogList}>
             <BlogList />
           </Route>

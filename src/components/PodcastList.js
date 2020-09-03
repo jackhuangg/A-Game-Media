@@ -9,7 +9,7 @@ function PodcastList(props) {
     db.collection(props.channel).onSnapshot((snapshot) =>
       setPodcastList(snapshot.docs.map((doc) => doc.data()))
     );
-  });
+  }, [props.channel]);
   return (
     <div>
       <div className="AlignOuterBox">

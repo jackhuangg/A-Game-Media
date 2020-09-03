@@ -9,7 +9,7 @@ function BlogList() {
     db.collection("blogs").onSnapshot((snapshot) =>
       setBlogList(snapshot.docs.map((doc) => doc.data()))
     );
-  });
+  }, []);
   return (
     <div>
       <div className="Introduction">

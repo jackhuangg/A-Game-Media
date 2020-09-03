@@ -1,12 +1,18 @@
+* {
+  font-family: Lato;
+}
+#SpanColor {
+  color: #ff7a00;
+}
 .Intro {
-  padding-top: 60px;
+  padding-top: 130px;
   display: flex;
   text-align: center;
   flex-direction: column;
   padding-bottom: 40px;
+  height: 80vh;
 }
 .Intro p {
-  font-family: Lato;
   font-weight: bold;
   margin-bottom: 0 !important;
   font-size: 88px;
@@ -16,15 +22,99 @@
   display: flex;
   text-align: center;
   flex-direction: column;
+  background-color: #f5f1eb;
 }
 .About p {
+  background-color: #f5f1eb;
   font-size: 45px;
-  background-color: white;
   color: black;
 }
-
+.AboutSection {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f1eb;
+}
+.AboutSection h2 {
+  margin-right: 200px;
+  text-align: left;
+  background-color: #f5f1eb;
+  color: black;
+  width: 500px;
+}
+.AboutSection img {
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+.Work {
+  padding-top: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.Work p {
+  font-size: 45px;
+}
+.WorkCard {
+  display: flex;
+  justify-content: center;
+}
+.EachCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: #f5f1eb;
+}
+#Middle {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.EachCard img {
+  background-color: transparent;
+  width: 175px;
+  height: 175px;
+}
+@media (max-width: 1150px) {
+  .AboutSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .AboutSection h2 {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: 70%;
+  }
+  .WorkCard {
+    flex-direction: column;
+    align-items: center;
+  }
+  #Middle {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .EachCard {
+    margin-bottom: 50px;
+  }
+}
 @media (max-width: 600px) {
   .Intro p {
     font-size: 56px;
+  }
+  .AboutSection h2 {
+    font-size: 28px;
+  }
+  .EachCard {
+    width: 250px;
+    height: 300px;
+  }
+  .EachCard img {
+    background-color: transparent;
+    width: 125px;
+    height: 125px;
   }
 }

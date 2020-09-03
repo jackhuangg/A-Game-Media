@@ -16,6 +16,7 @@ function PodcastTemplate({
   return (
     <div>
       <Link
+        className="NoHover"
         to={{
           pathname: "/PlayPodcast",
           state: {
