@@ -1,0 +1,67 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f1eb;
+  padding: 20px;
+}
+::placeholder {
+  color: black;
+}
+label,
+input,
+textarea {
+  display: block;
+  background: transparent;
+}
+label {
+  font-family: Lato;
+  margin-bottom: 20px;
+}
+input,
+textarea {
+  outline: none;
+  color: black !important;
+  border-width: 2.5px;
+  border-color: black;
+  padding: 20px;
+  width: 500px;
+  background-color: #f5f1eb;
+}
+#LastLabel {
+  padding-top: 15px;
+}
+button {
+  outline: none !important;
+  color: white;
+  font-size: 20px !important;
+  width: 300px;
+  padding: 20px;
+  border: none;
+  border-radius: 20px !important;
+  background-color: #007bff;
+  transition: ease 0.1s;
+}
+button:active {
+  opacity: 20%;
+}
+#firstwarning {
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: red;
+}
+#warning {
+  color: red;
+  font-size: 15px;
+}
+#received {
+  background-color: #f5f1eb;
+  color: #05c700;
+}
+@media (max-width: 700px) {
+  input,
+  textarea,
+  button {
+    width: 250px;
+  }
+}

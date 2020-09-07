@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import BlogListTemplate from "./BlogListTemplate";
 import "../styles/BlogList.css";
 import db from "../firebase";
@@ -10,6 +12,9 @@ function BlogList() {
       setBlogList(snapshot.docs.map((doc) => doc.data()))
     );
   }, []);
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div>
       <div className="Introduction">
@@ -20,7 +25,7 @@ function BlogList() {
           our Medium posts!
         </h3>
       </div>
-      <div className="BlogList">
+      <div className="BlogList" data-aos="zoom-in">
         {BlogList.map((blog) => (
           <BlogListTemplate
             title={blog.title}

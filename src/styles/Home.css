@@ -23,11 +23,12 @@
   text-align: center;
   flex-direction: column;
   background-color: #f5f1eb;
+  overflow: hidden;
 }
 .About p {
   background-color: #f5f1eb;
   font-size: 45px;
-  color: black;
+  color: #25262b;
 }
 .AboutSection {
   margin-top: 20px;
@@ -39,7 +40,7 @@
   margin-right: 200px;
   text-align: left;
   background-color: #f5f1eb;
-  color: black;
+  color: #25262b;
   width: 500px;
 }
 .AboutSection img {
@@ -53,6 +54,7 @@
   display: flex;
   text-align: center;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 .Work p {
   font-size: 45px;
@@ -79,6 +81,20 @@
   width: 175px;
   height: 175px;
 }
+.Connect {
+  background-color: #f5f1eb;
+  padding-top: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.Connect p {
+  margin-bottom: 0;
+  color: black;
+  background-color: #f5f1eb;
+  font-size: 45px;
+}
+
 @media (max-width: 1150px) {
   .AboutSection {
     flex-direction: column;

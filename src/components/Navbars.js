@@ -9,7 +9,7 @@ function Navbars() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-right">
-          {/* <Nav.Link href="About">About</Nav.Link> */}
+          <Nav.Link href="About">About</Nav.Link>
           <Nav.Link href="Blog">Blogs</Nav.Link>
           <Nav.Link href="Podcasts">Podcasts</Nav.Link>
           <Nav.Link href="Connect">Connect</Nav.Link>
