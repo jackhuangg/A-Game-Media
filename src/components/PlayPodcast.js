@@ -2,32 +2,32 @@ import React from "react";
 import ReactWebMediaPlayer from "react-web-media-player";
 import { withRouter } from "react-router";
 import "../styles/PlayPodcast.css";
-import logo from "../images/logo.jpeg";
+import templogo from "../images/logo.jpeg";
 
 function PlayPodcast(props) {
   let [
     podcasttitle,
     date,
     seasonep,
-    log,
+    logo,
     mp4link,
     shownotes,
   ] = props.location.state.text;
   console.log(mp4link);
   return (
-    <div>
-      {/* <ReactWebMediaPlayer
-        width={300}
-        height={300}
+    <div className="MediaPlayer">
+      <ReactWebMediaPlayer
+        width={560}
+        height={500}
         title={podcasttitle}
-        thumbnail={logo}
-        audio={"gs://agamemedia-afa09.appspot.com/Mom's interview.mp3"}
-        logo={{
-          img: "https://nusid.net/your-logo.png",
-          href: "https://www.npmjs.com/package/react-web-media-player",
-        }}
-      /> */}
-      <p>In Progress</p>
+        thumbnail={templogo}
+        audio={mp4link}
+      />
+      <div className="content">
+        <h2>{podcasttitle}</h2>
+        <p>{date}</p>
+        <h5>{shownotes}</h5>
+      </div>
     </div>
   );
 }
