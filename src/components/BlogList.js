@@ -13,16 +13,16 @@ function BlogList() {
     );
   }, []);
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 1000, once:true });
   }, []);
   return (
     <div>
       <div className="Introduction">
         <h1>Recent Blogs</h1>
         <h3>
-          Lorem ipsum dolor sit amet, consect etur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Check out
-          our Medium posts!
+        A-Game Media Co has officially launched our written form of content. 
+        Currently, all of the stories can be found on Medium. 
+        From interviewee spotlights to any announcements, be sure to check it out!
         </h3>
       </div>
       <div className="BlogList" data-aos="zoom-in">

@@ -1,0 +1,21 @@
+#padding{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+#lower-education-container ul{
+    margin-left: 30px;
+}
+#education-container {
+    text-align: center;
+}
+#lower-education-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 800px;
+    font-family: Open sans-serif;
+}
+#color{
+    font-weight: bold;
+    color: #ff7a00;
+}

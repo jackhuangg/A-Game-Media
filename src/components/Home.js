@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Typist from "react-typist";
-import "react-typist/dist/standalone/Typist.js";
 import "../styles/Home.css";
 import logo from "../images/logo.jpeg";
 import medium from "../images/medium.png";
@@ -12,7 +11,9 @@ import InputForm from "./InputForm";
 
 function Home() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 2000, 
+      once:true
+    });
   }, []);
   return (
     <div>
@@ -30,21 +31,28 @@ function Home() {
       <div className="About">
         <p>Who are we?</p>
         <div className="AboutSection" data-aos="fade-up">
-          <h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </h2>
+          <h3>
+          A start-up digital media company focused on content production across business, 
+          technology & sports. A-Game represents the universal language of bringing the 
+          best out of any situation. Our initial focus is on producing content in the 
+          form of podcasts, video blogs with plans of expanding into other forms of content.
+          </h3>
           <img alt="logo" src={logo}></img>
         </div>
       </div>
       <div className="Work">
         <p>Check out our platforms!</p>
         <div className="WorkCard">
-          <div className="EachCard" data-aos="zoom-in" data-aos-delay="100">
+        <a href="https://medium.com/@agamemediaco">
+          <div 
+          className="EachCard" 
+          data-aos="zoom-in" 
+          data-aos-delay="100"
+          >
             <img alt="medium" src={medium}></img>
           </div>
+          </a>
+          <a href="https://www.youtube.com/channel/UCZImvq3Z_7h3HC1cXKmawMw">
           <div
             className="EachCard"
             id="Middle"
@@ -53,9 +61,16 @@ function Home() {
           >
             <img alt="youtube" src={youtube}></img>
           </div>
-          <div className="EachCard" data-aos="zoom-in" data-aos-delay="300">
+          </a>
+          <a href="https://www.linkedin.com/company/a-game-media-co/">
+          <div 
+          className="EachCard" 
+          data-aos="zoom-in" 
+          data-aos-delay="300"
+          >
             <img alt="linkedin" src={linkedin}></img>
           </div>
+          </a>
         </div>
       </div>
       <div className="Connect">

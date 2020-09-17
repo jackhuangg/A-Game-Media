@@ -14,7 +14,9 @@ function PodcastList(props) {
     <div>
       <div className="AlignOuterBox">
         <div className="OuterBox">
-          <h3>Recent Episodes</h3>
+          <h1 id="centertitle">{props.title}</h1>
+          <h3>{props.summary}</h3>
+          <p>Recent Episodes</p>
           <div className="InnerBox">
             {PodcastList.map((podcast) => (
               <PodcastTemplate

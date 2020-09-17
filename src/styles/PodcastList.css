@@ -2,13 +2,15 @@
   display: flex;
   justify-content: center;
 }
-
+#centertitle{
+  text-align: center;
+}
 .OuterBox {
   display: flex;
   flex-direction: column;
   width: 900px;
 }
-.OuterBox h3 {
+.OuterBox p {
   color: #aaaaaa !important;
   padding-top: 30px;
   font-size: 20px;

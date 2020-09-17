@@ -4,6 +4,9 @@
 #SpanColor {
   color: #ff7a00;
 }
+.Cursor{
+  display: none;
+}
 .Intro {
   padding-top: 130px;
   display: flex;
@@ -36,7 +39,7 @@
   justify-content: center;
   background-color: #f5f1eb;
 }
-.AboutSection h2 {
+.AboutSection h3 {
   margin-right: 200px;
   text-align: left;
   background-color: #f5f1eb;
@@ -72,6 +75,10 @@
   height: 400px;
   background-color: #f5f1eb;
 }
+.EachCard:hover{
+  transition: background-color 500ms ;
+  background-color: transparent;
+}
 #Middle {
   margin-left: 50px;
   margin-right: 50px;
@@ -100,7 +107,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .AboutSection h2 {
+  .AboutSection h3 {
     margin-right: 0;
     margin-bottom: 30px;
     width: 70%;
@@ -121,7 +128,7 @@
   .Intro p {
     font-size: 56px;
   }
-  .AboutSection h2 {
+  .AboutSection h3 {
     font-size: 28px;
   }
   .EachCard {
