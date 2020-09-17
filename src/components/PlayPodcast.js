@@ -13,7 +13,7 @@ function PlayPodcast(props) {
     mp4link,
     shownotes,
   ] = props.location.state.text;
-  console.log(mp4link);
+  let audio = require("../audio/jibril.mp3");
   return (
     <div className="MediaPlayer">
       <ReactWebMediaPlayer
@@ -21,7 +21,7 @@ function PlayPodcast(props) {
         height={500}
         title={podcasttitle}
         thumbnail={templogo}
-        audio={mp4link}
+        audio={audio}
       />
       <div className="content">
         <h2>{podcasttitle}</h2>
