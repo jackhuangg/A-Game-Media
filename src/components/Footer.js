@@ -2,8 +2,7 @@ import React from "react";
 import "../styles/Footer.css";
 // import {fafacebook} from '@fortawesome/free-solid-svg-icons'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Form,Button} from 'react-bootstrap'
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import facebookFilled from '@iconify/icons-ant-design/facebook-filled';
 import mediumSquareFilled from '@iconify/icons-ant-design/medium-square-filled'
 import linkedinFilled from '@iconify/icons-ant-design/linkedin-filled';

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import '../styles/InputForm.css'
 import db from "../firebase";
+import firebase from 'firebase'
 
 function Admin() {
   const [pickpodcast, setpodcast] = useState("");
@@ -19,6 +21,7 @@ function Admin() {
       logo: podcastlogo,
       mp4link: podcastmp4,
       shownotes: podcastshownotes,
+      createdAt:firebase.firestore.FieldValue.serverTimestamp()
     });
     setpodcast("");
     setpodcasttitle("");

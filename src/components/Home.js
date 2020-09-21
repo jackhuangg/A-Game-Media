@@ -8,7 +8,6 @@ import medium from "../images/medium.png";
 import youtube from "../images/youtube.png";
 import linkedin from "../images/linkedin.png";
 import EventList from "./EventList"
-import InputForm from "./InputForm";
 import Table from 'react-bootstrap/Table';
 
 function Home() {

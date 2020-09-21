@@ -6,7 +6,7 @@ import db from "../firebase";
 function PodcastList(props) {
   const [PodcastList, setPodcastList] = useState([]);
   useEffect(() => {
-    db.collection(props.channel).onSnapshot((snapshot) =>
+    db.collection(props.channel).orderBy('createdAt','desc').onSnapshot((snapshot) =>
       setPodcastList(snapshot.docs.map((doc) => doc.data()))
     );
   }, [props.channel]);

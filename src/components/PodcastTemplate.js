@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/PodcastTemplate.css";
 import playbutton from "../images/playbutton.png";
 import companylogo from "../images/logo.jpeg";
-
 import { Link } from "react-router-dom";
 
 function PodcastTemplate({

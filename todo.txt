@@ -4,23 +4,27 @@ STATUS OF EACH page
     [x]figure out mailchimp
     []decide between firebase, aws, or bunnycdn
     [x]fix footer
-    []figure out if we can avoid footer moving during page load
-
+    
     HOMEPAGE
     [x]popup words under title
     [x]bulletin points on homepage
-    [i dont think this is necessary]add youtube preview
     [x]fix hover issue
+    []add firebase functionality to the upcoming events section
 
     ABOUT
     []team cards
-    []add more content, maybe a picture somewhere
-
+    
     PODCAST
     []need to change intro text
     [x]change orientation of podcast/summary
 
     CONNECT
-    []social media icons on the left
-    []text on the right
-        
+    [x]social media icons on the left
+    [x]text on the right
+
+
+
+    Not super necessary
+    []add more content, maybe a picture somewhere
+    []figure out if we can avoid footer moving during page load
+    []add youtube preview

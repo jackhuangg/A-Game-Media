@@ -13,7 +13,6 @@ function PlayPodcast(props) {
     mp4link,
     shownotes,
   ] = props.location.state.text;
-  let audio = require("../audio/jibril.mp3");
   return (
     <div className="MediaPlayer">
       <div className="audioplayer">
