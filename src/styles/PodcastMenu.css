@@ -48,4 +48,7 @@
   #right {
     padding-left: 0;
   }
+  .responsive{
+    font-size: 20px;
+  }
 }

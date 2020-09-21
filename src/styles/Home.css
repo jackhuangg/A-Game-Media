@@ -8,12 +8,12 @@
   display: none;
 }
 .Intro {
-  padding-top: 130px;
+  padding-top: 100px;
   display: flex;
   text-align: center;
   flex-direction: column;
   padding-bottom: 40px;
-  height: 80vh;
+  height: 700px
 }
 .Intro p {
   font-weight: bold;
@@ -101,7 +101,31 @@
   background-color: #f5f1eb;
   font-size: 45px;
 }
-
+.undertitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.undertitle p{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.eventlist{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+th,td{
+  color: black;
+  font-weight: normal;
+  font-size: 16px;
+}
+.table ,thead ,th{
+  border-width: 2px !important;
+  border-color: black !important;
+}
 @media (max-width: 1150px) {
   .AboutSection {
     flex-direction: column;
@@ -125,6 +149,10 @@
   }
 }
 @media (max-width: 600px) {
+  .undertitle p{
+    font-size: 20px !important;
+    font-weight: normal;
+  }
   .Intro p {
     font-size: 56px;
   }

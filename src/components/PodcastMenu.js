@@ -12,7 +12,7 @@ function PodcastMenu() {
     <div>
       <div className="Introduction">
         <h1>Podcasts</h1>
-        <h3>
+        <h3 class="responsive">
           Lorem ipsum dolor sit amet, consect etur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Check out
           our two Podcast Channels!

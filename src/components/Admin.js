@@ -74,7 +74,7 @@ function Admin() {
           placeholder="input podcast shownotes"
           type="text"
         />
-        <button onClick={sendpodcast} type="submit">
+        <button className="button"onClick={sendpodcast} type="submit">
           Submit Form
         </button>
       </form>

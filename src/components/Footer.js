@@ -1,9 +1,17 @@
 import React from "react";
 import "../styles/Footer.css";
 // import {fafacebook} from '@fortawesome/free-solid-svg-icons'
-import facebook from "../images/facebook.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Form,Button} from 'react-bootstrap'
+import { Icon, InlineIcon } from "@iconify/react";
+import facebookFilled from '@iconify/icons-ant-design/facebook-filled';
+import mediumSquareFilled from '@iconify/icons-ant-design/medium-square-filled'
+import linkedinFilled from '@iconify/icons-ant-design/linkedin-filled';
+import youtubeIcon from '@iconify/icons-vaadin/youtube';
+import bxChevronRight from '@iconify/icons-bx/bx-chevron-right'
+import bxlInstagram from '@iconify/icons-bx/bxl-instagram';
 
+ 
 function Footer() {
   return (
     <footer id="footer">
@@ -11,57 +19,52 @@ function Footer() {
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6">
-              <div className="footer-info">
-                <h3 style={{fontsize:"16px"}}>
+              <div className="footer-info footer-links">
+                <h3 id="footertitle">
                   A-Game Media Co.
                 </h3>
                 <p>
-                  Email: info@example.com<br />
+                  Email: <a id="emaillink"href="mailto:agamemediaco@gmail.com">agamemediaco@gmail.com</a>
                 </p>
-                {/* <div class="social-links mt-3">
-                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                  <a href="#" class="facebook"
-                    ><i class="bx bxl-facebook"></i
-                  ></a>
-                  <a href="#" class="instagram"
-                    ><i class="bx bxl-instagram"></i
-                  ></a>
-                  <a href="#" class="google-plus"
-                    ><i class="bx bxl-skype"></i
-                  ></a>
-                  <a href="#" class="linkedin"
-                    ><i class="bx bxl-linkedin"></i
-                  ></a>
-                </div> */}
+                <div class="social-links mt-3">
+                <a href="https://www.facebook.com/agamedmediaco/"><Icon icon={facebookFilled} width="40px"/></a>
+                <a href="https://medium.com/@agamemediaco"><Icon icon={mediumSquareFilled} width="40px"/></a>
+                <a href="https://www.youtube.com/channel/UCZImvq3Z_7h3HC1cXKmawMw"><Icon icon={youtubeIcon} width="40px"/></a>
+                <a href="https://www.linkedin.com/company/a-game-media-co/"><Icon icon={linkedinFilled} width="40px"/></a>
+                <a href="https://www.instagram.com/agamemediaco/?hl=en"><Icon icon={bxlInstagram} width="40px"/></a>
+                </div>
               </div>
             </div>
 
             <div className="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
+              <h4 id="footersubheader" style={{color:"grey"}}>Our Company</h4>
               <ul>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="./pages/education/education.html">Education</a>
+                <Icon icon={bxChevronRight} width="30px" color="#ff7a00"/> <a href="/">Home</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="./assets/pdf/Annual_Calendar.pdf">Events</a>
+                <Icon icon={bxChevronRight} width="30px" color="#ff7a00"/> <a href="About">About</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right"></i>
-                  <a href="./assets/pdf/TempleGuide.pdf">Temple Information</a>
+                <Icon icon={bxChevronRight} width="30px" color="#ff7a00"/><a href="Connect">Connect</a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-3 col-md-6 footer-links" >
+            <h4 id="footersubheader" style={{color:"grey"}}>Our Media</h4>
+            <ul>
+                <li>
+                <Icon icon={bxChevronRight} width="30px" color="#ff7a00"/> <a href="Podcasts">Podcasts</a>
+                </li>
+                <li>
+                <Icon icon={bxChevronRight} width="30px" color="#ff7a00"/> <a href="Blog">Blogs</a>
                 </li>
               </ul>
             </div>
 
-
-            <div className="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Join the Newsletter</h4>
-              <p>Email:</p>
-              <form action="" method="post">
-                <input type="email" name="email" /><input
-                  type="submit"
-                  value="Subscribe"
-                />
-              </form>
+            <div className="col-lg-4 col-md-6 bottompadding">
+            <h4 id="footersubheader" style={{color:"grey"}}>Subscribe to our Newsletter</h4>
+            <a href="http://eepurl.com/hdKp4b"><button className="subscribebutton" >Click Here</button></a>
             </div>
           </div>
         </div>
@@ -71,7 +74,6 @@ function Footer() {
         <div className="copyright">
           &copy; Copyright 2020 A-Game Media Co.
         </div>
-        
       </div>
     </footer>
   );

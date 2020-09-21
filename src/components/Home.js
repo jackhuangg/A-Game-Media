@@ -7,7 +7,9 @@ import logo from "../images/logo.jpeg";
 import medium from "../images/medium.png";
 import youtube from "../images/youtube.png";
 import linkedin from "../images/linkedin.png";
+import EventList from "./EventList"
 import InputForm from "./InputForm";
+import Table from 'react-bootstrap/Table';
 
 function Home() {
   useEffect(() => {
@@ -17,17 +19,23 @@ function Home() {
   }, []);
   return (
     <div>
-      <Typist>
+      
         <div className="Intro">
-          <p>Universal</p>
-          <Typist.Delay ms={300} />
-          <p>
-            Language <span id="SpanColor">of</span>
-          </p>
-          <Typist.Delay ms={300} />
-          <p>Excellence</p>
+          <Typist>
+            <p>Universal</p>
+            <Typist.Delay ms={100} />
+            <p>
+              Language <span id="SpanColor">of</span>
+            </p>
+            <Typist.Delay ms={100} />
+            <p>Excellence</p>
+          </Typist>
+          <div className="undertitle">
+            <p data-aos="fade-up" data-aos-delay="2700">Technology</p>
+            <p data-aos="fade-up" data-aos-delay="2800">Sports</p>
+            <p data-aos="fade-up" data-aos-delay="2900">Career</p>
+          </div>
         </div>
-      </Typist>
       <div className="About">
         <p>Who are we?</p>
         <div className="AboutSection" data-aos="fade-up">
@@ -74,10 +82,49 @@ function Home() {
         </div>
       </div>
       <div className="Connect">
-        <p>Get in Touch</p>
-        <div className="InputForm">
-          <InputForm />
+        <p>Upcoming Events</p>
+        <div className="eventlist">
+        <Table responsive="sm" id="color">
+          <thead>
+            <tr>
+              <th>
+                Date
+              </th>
+              <th>
+                Description
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                September 5th 2020
+              </td>
+              <td>
+                Youtube Live with XXX
+              </td>
+            </tr>
+            <tr>
+              <td>
+                September 5th 2020
+              </td>
+              <td>
+                Youtube Live with XXX
+              </td>
+            </tr>
+            <tr>
+              <td>
+                September 5th 2020
+              </td>
+              <td>
+                Youtube Live with XXX
+              </td>
+            </tr>
+          </tbody>
+        </Table>
         </div>
+        
+        <EventList/>
       </div>
     </div>
   );

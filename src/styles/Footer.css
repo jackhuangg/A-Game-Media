@@ -28,17 +28,21 @@
     max-width: 25px;
   }
 } */
+/* *{
+  font-family: 'Open Sans', sans-serif ;
+} */
 #footer {
   background: black;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
+  margin-top: auto;
 }
 
 #footer .footer-top {
   background: #151515;
   border-bottom: 1px solid #222222;
-  padding: 60px 0 30px 0;
+  padding: 30px 0 5px 0;
 }
 
 #footer .footer-top .footer-info {
@@ -51,11 +55,10 @@
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 #footer .footer-top .footer-info h3 span {
-  color: #ffc451;
+  color: #ff7a00;
 }
 
 #footer .footer-top .footer-info p {
@@ -82,7 +85,7 @@
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #ffc451;
+  background: #ff7a00;
   color: #151515;
   text-decoration: none;
 }
@@ -107,7 +110,7 @@
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ffc451;
+  color: #ff7a00;
   font-size: 18px;
   line-height: 1;
 }
@@ -130,7 +133,7 @@
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ffc451;
+  color: #ff7a00;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -156,14 +159,14 @@
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #ffc451;
+  background: #ff7a00;
   color: #151515;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #ffcd6b;
+  background: #ff7a00;
 }
 
 #footer .copyright {
@@ -182,4 +185,35 @@
 #bootfooter {
   color: #000000;
   font-size: 1px;
+}
+
+#footertitle{
+  font-size: 20px !important;
+  font-weight: normal !important;
+}
+
+#footersubheader{
+  
+  font-weight: normal !important;
+  font-size: 19px !important;
+}
+
+#emaillink{
+  transition: .3s;
+  color: white;
+}
+#emaillink:hover{
+  color: #ff7a00;
+}
+.subscribebutton{
+  color: white;
+  border: none;
+  width: 230px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #ff7a00;
+  font-size: 15px;
+}
+.bottompadding{
+  padding-bottom: 20px;
 }

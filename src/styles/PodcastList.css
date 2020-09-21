@@ -12,8 +12,11 @@
 }
 .OuterBox p {
   color: #aaaaaa !important;
-  padding-top: 30px;
+  
   font-size: 20px;
+}
+#paddingtop{
+  padding-top: 30px;
 }
 .InnerBox {
   display: flex;
@@ -26,7 +29,8 @@
   }
 }
 @media (max-width: 600px) {
-  .OuterBox h3 {
-    text-align: center;
+  .responsive{
+    font-size: 16px;
+    text-align: left;
   }
 }

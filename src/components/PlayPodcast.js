@@ -16,13 +16,15 @@ function PlayPodcast(props) {
   console.log(mp4link);
   return (
     <div className="MediaPlayer">
-      <ReactWebMediaPlayer
-        width={560}
-        height={500}
-        title={podcasttitle}
-        thumbnail={templogo}
-        audio={mp4link}
-      />
+      <div className="audioplayer">
+        <ReactWebMediaPlayer
+          width={450}
+          height={400}
+          title={podcasttitle}
+          thumbnail={templogo}
+          audio={mp4link}
+        />
+      </div>
       <div className="content">
         <h2>{podcasttitle}</h2>
         <p>{date}</p>

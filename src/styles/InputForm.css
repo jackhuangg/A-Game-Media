@@ -31,7 +31,7 @@ textarea {
 #LastLabel {
   padding-top: 15px;
 }
-button {
+.button {
   outline: none !important;
   color: white;
   font-size: 20px !important;
@@ -42,7 +42,7 @@ button {
   background-color: #007bff;
   transition: ease 0.1s;
 }
-button:active {
+.button:active {
   opacity: 20%;
 }
 #firstwarning {

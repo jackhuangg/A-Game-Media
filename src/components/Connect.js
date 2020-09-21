@@ -3,7 +3,7 @@ import React from "react";
 function Connect() {
   return (
     <div>
-      <h1>In Progress</h1>
+      <h1>Test Firebase again</h1>
     </div>
   );
 }

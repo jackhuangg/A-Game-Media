@@ -15,8 +15,9 @@ function PodcastList(props) {
       <div className="AlignOuterBox">
         <div className="OuterBox">
           <h1 id="centertitle">{props.title}</h1>
-          <h3>{props.summary}</h3>
-          <p>Recent Episodes</p>
+          <h3 className="responsive">{props.summary}</h3> 
+          {/* these values are set in app.js since both podcast use the same components */}
+          <p id="toppadding">Recent Episodes</p>
           <div className="InnerBox">
             {PodcastList.map((podcast) => (
               <PodcastTemplate

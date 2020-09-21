@@ -1,16 +1,39 @@
 .MediaPlayer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+.audioplayer{
+  padding-right: 20px;
 }
 .content {
-  padding-top: 20px;
+  padding-left: 20px;
   width: 600px;
 }
-@media (max-width: 620px) {
+@media (max-width: 1100px) {
   .MediaPlayer {
     padding-top: 20px;
-    transform: scale(0.6);
+    transform: scale(0.9);
+    flex-direction: column;
+  }
+  .audioplayer{
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  .content {
+    padding-left: 0;
+  }
+}
+@media(max-width:600px){
+  .MediaPlayer {
+    transform: scale(.7);
+  }
+}
+@media(max-width:450px){
+  .MediaPlayer {
+    transform: scale(.6);
   }
 }
