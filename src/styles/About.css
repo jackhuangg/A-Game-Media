@@ -1,21 +1,42 @@
-#padding{
-    padding-left: 35px;
-    padding-right: 35px;
+#padding {
+  padding-left: 35px;
+  padding-right: 35px;
 }
-#lower-education-container ul{
-    margin-left: 30px;
+#lower-education-container ul {
+  margin-left: 30px;
 }
 #education-container {
-    text-align: center;
+  text-align: center;
 }
 #lower-education-container {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 800px;
-    font-family: Open sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 800px;
+  font-family: Open sans-serif;
 }
-#color{
-    font-weight: bold;
-    color: #ff7a00;
+#color {
+  font-weight: bold;
+  color: #ff7a00;
+}
+.employee {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.eachemployee {
+  padding: 30px;
+}
+.cards {
+  width: 15rem;
+}
+.font {
+  color: black !important;
+}
+.subtitle {
+  font-size: 10px;
+}
+#imgsize {
+  width: 238px;
+  height: 238px;
 }
