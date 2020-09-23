@@ -10,7 +10,9 @@ function BlogListTemplate({ title, summary, image, url }) {
   }, []);
   return (
     <div className="BlogBlock">
-      <img alt="blogimg" src={image}></img>
+      <div className="imagediv">
+        <img alt="blogimg" src={image}></img>
+      </div>
       <h1>{title}</h1>
       <p>{summary}</p>
       <a href={url}>Read More...</a>

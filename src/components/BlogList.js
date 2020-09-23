@@ -10,6 +10,7 @@ function BlogList() {
   useEffect(() => {
     db.collection("blogs")
       .orderBy("createdAt", "desc")
+      .limit(3)
       .onSnapshot((snapshot) =>
         setBlogList(snapshot.docs.map((doc) => doc.data()))
       );

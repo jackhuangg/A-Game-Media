@@ -9,10 +9,10 @@ STATUS OF EACH page
     [x]popup words under title
     [x]bulletin points on homepage
     [x]fix hover issue
-    []add firebase functionality to the upcoming events section
+    [x]add firebase functionality to the upcoming events section
 
     ABOUT
-    []team cards
+    [x]team cards
     
     PODCAST
     []need to change intro text
