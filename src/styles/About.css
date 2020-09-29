@@ -10,10 +10,16 @@
 }
 #lower-education-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: auto;
-  max-width: 800px;
+  max-width: 1200px;
   font-family: Open sans-serif;
+}
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
 }
 #color {
   font-weight: bold;
@@ -39,4 +45,10 @@
 #imgsize {
   width: 238px;
   height: 238px;
+}
+@media (max-width: 1020px) {
+  #lower-education-container {
+    align-items: center;
+    flex-direction: column;
+  }
 }

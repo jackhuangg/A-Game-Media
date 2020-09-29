@@ -9,7 +9,6 @@ function Admin() {
   const [pickpodcast, setpodcast] = useState("");
   const [podcasttitle, setpodcasttitle] = useState("");
   const [podcastdate, setpodcastdate] = useState("");
-  const [podcastseasonep, setpodcastseasonep] = useState("");
   const [podcastlogo, setpodcastlogo] = useState("");
   const [podcastmp4, setpodcastmp4] = useState("");
   const [podcastshownotes, setpodcastshownotes] = useState("");
@@ -27,7 +26,6 @@ function Admin() {
     db.collection(pickpodcast).add({
       podcasttitle: podcasttitle,
       date: podcastdate,
-      seasonep: podcastseasonep,
       logo: podcastlogo,
       mp4link: podcastmp4,
       shownotes: podcastshownotes,
@@ -36,7 +34,6 @@ function Admin() {
     setpodcast("");
     setpodcasttitle("");
     setpodcastdate("");
-    setpodcastseasonep("");
     setpodcastlogo("");
     setpodcastmp4("");
     setpodcastshownotes("");
@@ -67,18 +64,16 @@ function Admin() {
     settitle("");
     setlinkurl("");
   };
-
   return (
     <div className="admin">
       {/* FORM FOR PODCAST SECTION */}
       <h1>Podcast Form</h1>
       <form>
-        <input
-          onChange={(e) => setpodcast(e.target.value)}
-          value={pickpodcast}
-          placeholder="agametalks or unathletic? type exact"
-          type="text"
-        />
+        <h5>Pick a podcast category</h5>
+        <select name="dropdown" onChange={(e) => setpodcast(e.target.value)}>
+          <option value="agametalks">A-Game Talks</option>
+          <option value="unathletic">UnAthletic</option>
+        </select>
         <input
           onChange={(e) => setpodcasttitle(e.target.value)}
           value={podcasttitle}
@@ -91,18 +86,15 @@ function Admin() {
           placeholder="input podcast date"
           type="text"
         />
-        <input
-          onChange={(e) => setpodcastseasonep(e.target.value)}
-          value={podcastseasonep}
-          placeholder="input podcast season and episode"
-          type="text"
-        />
-        <input
+        <h5>Pick a podcast logo</h5>
+        <select
+          name="dropdown"
           onChange={(e) => setpodcastlogo(e.target.value)}
-          value={podcastlogo}
-          placeholder="input podcast logo"
-          type="text"
-        />
+        >
+          <option value="logo">Company Logo</option>
+          <option value="wonsulting">Wonsulting Logo</option>
+          <option value="unathletic">UnAthletic Logo</option>
+        </select>
         <input
           onChange={(e) => setpodcastmp4(e.target.value)}
           value={podcastmp4}

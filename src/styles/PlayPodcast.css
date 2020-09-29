@@ -6,8 +6,9 @@
   padding-bottom: 50px;
   justify-content: center;
 }
-.audioplayer{
+.audioplayer {
   padding-right: 20px;
+  overflow: hidden;
 }
 .content {
   padding-left: 20px;
@@ -19,7 +20,7 @@
     transform: scale(0.9);
     flex-direction: column;
   }
-  .audioplayer{
+  .audioplayer {
     padding-right: 0;
     padding-bottom: 20px;
   }
@@ -27,13 +28,13 @@
     padding-left: 0;
   }
 }
-@media(max-width:600px){
+@media (max-width: 600px) {
   .MediaPlayer {
-    transform: scale(.7);
+    transform: scale(0.7);
   }
 }
-@media(max-width:450px){
+@media (max-width: 450px) {
   .MediaPlayer {
-    transform: scale(.6);
+    transform: scale(0.6);
   }
 }

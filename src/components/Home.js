@@ -23,7 +23,6 @@ function Home() {
         setSchedule(snapshot.docs.map((doc) => doc.data()))
       );
   }, []);
-  console.log(Schedule);
   return (
     <div>
       <div className="Intro">
@@ -37,14 +36,17 @@ function Home() {
           <p>Excellence</p>
         </Typist>
         <div className="undertitle">
-          <p data-aos="fade-up" data-aos-delay="2700">
-            Technology
-          </p>
-          <p data-aos="fade-up" data-aos-delay="2800">
+          <p data-aos="fade-left" data-aos-delay="2700">
             Sports
           </p>
-          <p data-aos="fade-up" data-aos-delay="2900">
-            Career
+          <p data-aos="fade-left" data-aos-delay="2800">
+            Business
+          </p>
+          <p data-aos="fade-left" data-aos-delay="2900">
+            Entertainment
+          </p>
+          <p data-aos="fade-left" data-aos-delay="2900">
+            Technology
           </p>
         </div>
       </div>

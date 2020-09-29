@@ -2,13 +2,11 @@ import React from "react";
 import ReactWebMediaPlayer from "react-web-media-player";
 import { withRouter } from "react-router";
 import "../styles/PlayPodcast.css";
-import templogo from "../images/logo.jpeg";
 
 function PlayPodcast(props) {
   let [
     podcasttitle,
     date,
-    seasonep,
     logo,
     mp4link,
     shownotes,
@@ -20,7 +18,7 @@ function PlayPodcast(props) {
           width={450}
           height={400}
           title={podcasttitle}
-          thumbnail={templogo}
+          thumbnail={`/${logo}.jpeg`}
           audio={mp4link}
         />
       </div>

@@ -1,33 +1,39 @@
-.connectpage{
-    padding: 8% 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.connectpage {
+  padding: 8% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.connectpage img{
-    width: 250px;
-    border-radius: 20px;
+.connectpage img {
+  width: 250px;
+  border-radius: 20px;
 }
-.connectpage h1{
-    width: 50%;
+.connectpage h1 {
+  width: 50%;
+}
+#email {
+  color: #ff7a00;
+}
+#email:hover {
+  color: #ff7a00;
 }
 
-@media(max-width:990px){
-    .connectpage h1{
-        margin-top: auto;
-        font-size: 20px;
-        margin-bottom: auto;
-    }
+@media (max-width: 990px) {
+  .connectpage h1 {
+    margin-top: auto;
+    font-size: 20px;
+    margin-bottom: auto;
+  }
 }
-@media(max-width:700px){
-    .connectpage{
-        flex-direction: column;
-        align-items: center;
-    }
-    .connectpage img{
-        width: 200px;
-    }
-    .connectpage h1{
-        padding-top: 20px;
-    }
+@media (max-width: 700px) {
+  .connectpage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .connectpage img {
+    width: 200px;
+  }
+  .connectpage h1 {
+    padding-top: 20px;
+  }
 }

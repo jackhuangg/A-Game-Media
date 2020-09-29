@@ -25,7 +25,6 @@ function PodcastList(props) {
               <PodcastTemplate
                 podcasttitle={podcast.podcasttitle}
                 date={podcast.date}
-                seasonep={podcast.seasonep}
                 logo={podcast.logo}
                 mp4link={podcast.mp4link}
                 shownotes={podcast.shownotes}

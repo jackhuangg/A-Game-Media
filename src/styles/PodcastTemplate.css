@@ -46,7 +46,7 @@
     width: 80%;
   }
   .TitleDateSection p {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .LogoSection img {
     width: 55px !important;

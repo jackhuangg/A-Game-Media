@@ -40,7 +40,7 @@
     flex-direction: column;
   }
   .Card img {
-    width: 60% !important;
+    width: 40% !important;
   }
   #left {
     padding-right: 0;
@@ -48,7 +48,7 @@
   #right {
     padding-left: 0;
   }
-  .responsive{
+  .responsive {
     font-size: 20px;
   }
 }

@@ -1,17 +1,10 @@
 import React from "react";
 import "../styles/PodcastTemplate.css";
 import playbutton from "../images/playbutton.png";
-import companylogo from "../images/logo.jpeg";
 import { Link } from "react-router-dom";
 
-function PodcastTemplate({
-  podcasttitle,
-  date,
-  seasonep,
-  logo,
-  mp4link,
-  shownotes,
-}) {
+function PodcastTemplate({ podcasttitle, date, logo, mp4link, shownotes }) {
+  console.log(logo);
   return (
     <div>
       <Link
@@ -19,7 +12,7 @@ function PodcastTemplate({
         to={{
           pathname: "/PlayPodcast",
           state: {
-            text: [podcasttitle, date, seasonep, logo, mp4link, shownotes],
+            text: [podcasttitle, date, logo, mp4link, shownotes],
           },
         }}
       >
@@ -32,7 +25,7 @@ function PodcastTemplate({
             <p>{date}</p>
           </div>
           <div className="LogoSection">
-            <img alt="companylogo" src={companylogo}></img>
+            <img alt="companylogo" src={`/${logo}.jpeg`}></img>
           </div>
         </div>
       </Link>
