@@ -6,7 +6,6 @@
   padding-bottom: 15px;
   background: transparent;
   transition: transform 0.4s;
-  -webkit-transition-duration: 0.4s;
 }
 .TemplateBox:hover {
   transform: scale(1.05);
