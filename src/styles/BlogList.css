@@ -10,7 +10,13 @@
   justify-content: center;
   padding: 35px 0 40px;
 }
-
+.title {
+  margin: 10px auto;
+  background-color: #a65d3f;
+  width: fit-content;
+  padding: 10px 40px;
+  border-radius: 15px;
+}
 @media (max-width: 1000px) {
   .BlogList {
     flex-direction: column;

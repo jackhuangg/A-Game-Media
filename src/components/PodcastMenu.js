@@ -11,11 +11,12 @@ function PodcastMenu() {
   return (
     <div>
       <div className="Introduction">
-        <h1>Podcasts</h1>
+        <h1 className="title">Podcasts</h1>
         <h3 class="responsive">
-          Lorem ipsum dolor sit amet, consect etur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Check out
-          our two Podcast Channels!
+          For our audio story telling, we will be covering authentic stories
+          ranging from interviews to just laid back conversations connecting
+          personal experiences to topics in the news. Be sure to check out both
+          our shows A-Game Talks & The UnAthletic.
         </h3>
       </div>
       <div className="DisplayCard">

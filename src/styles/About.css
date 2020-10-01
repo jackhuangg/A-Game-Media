@@ -1,3 +1,10 @@
+.title {
+  margin: 10px auto;
+  background-color: #a65d3f;
+  width: fit-content;
+  padding: 10px 40px;
+  border-radius: 15px;
+}
 #padding {
   padding-left: 35px;
   padding-right: 35px;

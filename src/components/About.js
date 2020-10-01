@@ -16,7 +16,7 @@ function About() {
   return (
     <div id="padding">
       <div id="education-container">
-        <h1>About Us</h1>
+        <h1 className="title">About Us</h1>
       </div>
       <div id="lower-education-container">
         <div className="left">
@@ -57,7 +57,7 @@ function About() {
         </div>
       </div>
       <div id="education-container">
-        <h1>Meet The Team</h1>
+        <h1 className="title">Meet The Team</h1>
       </div>
       <div className="employee">
         <div className="eachemployee" data-aos="fade-in" data-aos-delay="200">

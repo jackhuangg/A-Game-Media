@@ -51,7 +51,7 @@ function Home() {
         </div>
       </div>
       <div className="About">
-        <p>Who are we?</p>
+        <p className="title">Who are we?</p>
         <div className="AboutSection" data-aos="fade-up">
           <h3>
             A start-up digital media company focused on content production
@@ -64,7 +64,7 @@ function Home() {
         </div>
       </div>
       <div className="Work">
-        <p>Check out our platforms!</p>
+        <p className="title">Check out our platforms!</p>
         <div className="WorkCard">
           <a href="https://medium.com/@agamemediaco">
             <div className="EachCard" data-aos="zoom-in" data-aos-delay="100">
@@ -89,7 +89,7 @@ function Home() {
         </div>
       </div>
       <div className="Connect">
-        <p>Upcoming Events</p>
+        <p className="title">Upcoming Events</p>
         <div className="eventlist">
           <Table responsive="sm" id="color">
             <thead>

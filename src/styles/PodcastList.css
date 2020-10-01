@@ -2,8 +2,12 @@
   display: flex;
   justify-content: center;
 }
-#centertitle{
-  text-align: center;
+.title {
+  margin: 10px auto;
+  background-color: #a65d3f;
+  width: fit-content;
+  padding: 10px 40px;
+  border-radius: 15px;
 }
 .OuterBox {
   display: flex;
@@ -12,10 +16,10 @@
 }
 .OuterBox p {
   color: #aaaaaa !important;
-  
+
   font-size: 20px;
 }
-#paddingtop{
+#paddingtop {
   padding-top: 30px;
 }
 .InnerBox {
@@ -29,7 +33,7 @@
   }
 }
 @media (max-width: 600px) {
-  .responsive{
+  .responsive {
     font-size: 16px;
     text-align: left;
   }

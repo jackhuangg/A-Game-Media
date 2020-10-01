@@ -22,7 +22,7 @@ function BlogList() {
   return (
     <div>
       <div className="Introduction">
-        <h1>Recent Blogs</h1>
+        <h1 className="title">Recent Blogs</h1>
         <h3>
           A-Game Media Co has officially launched our written form of content.
           Currently, all of the stories can be found on Medium. From interviewee

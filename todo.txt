@@ -4,6 +4,7 @@ STATUS OF EACH page
     [x]figure out mailchimp
     []decide between firebase, aws, or bunnycdn
     [x]fix footer
+    []add border around title
     
     HOMEPAGE
     [x]popup words under title
@@ -13,6 +14,7 @@ STATUS OF EACH page
 
     ABOUT
     [x]team cards
+    []add company values
     
     PODCAST
     []need to change intro text

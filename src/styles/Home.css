@@ -1,10 +1,18 @@
 * {
   font-family: Lato;
 }
+.title {
+  margin: 10px auto;
+  background-color: #a65d3f !important;
+  width: fit-content;
+  padding: 10px 40px;
+  border-radius: 15px;
+  color: white !important;
+}
 #SpanColor {
   color: #ff7a00;
 }
-.Cursor{
+.Cursor {
   display: none;
 }
 .Intro {
@@ -13,7 +21,7 @@
   text-align: center;
   flex-direction: column;
   padding-bottom: 40px;
-  height: 700px
+  height: 700px;
 }
 .Intro p {
   font-weight: bold;
@@ -63,6 +71,7 @@
   font-size: 45px;
 }
 .WorkCard {
+  padding-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -75,8 +84,8 @@
   height: 400px;
   background-color: #f5f1eb;
 }
-.EachCard:hover{
-  transition: background-color 500ms ;
+.EachCard:hover {
+  transition: background-color 500ms;
   background-color: transparent;
 }
 #Middle {
@@ -101,28 +110,32 @@
   background-color: #f5f1eb;
   font-size: 45px;
 }
-.undertitle{
+.undertitle {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.undertitle p{
+.undertitle p {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 20px;
   font-weight: normal;
 }
-.eventlist{
+.eventlist {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 70%;
+  padding-top: 30px;
 }
-th,td{
+th,
+td {
   color: black;
   font-weight: normal;
   font-size: 16px;
 }
-.table ,thead ,th{
+.table,
+thead,
+th {
   border-width: 2px !important;
   border-color: black !important;
 }
@@ -149,7 +162,7 @@ th,td{
   }
 }
 @media (max-width: 600px) {
-  .undertitle p{
+  .undertitle p {
     font-size: 20px !important;
     font-weight: normal;
   }
