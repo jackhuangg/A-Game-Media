@@ -1,6 +1,7 @@
 .AlignOuterBox {
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 .title {
   margin: 10px auto;

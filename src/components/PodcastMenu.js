@@ -2,7 +2,9 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "../styles/PodcastMenu.css";
-import logo from "../images/logo.jpeg";
+import unathletic from "../images/unathletic.jpeg";
+import agametalks from "../images/agametalks.jpeg";
+
 
 function PodcastMenu() {
   useEffect(() => {
@@ -22,7 +24,7 @@ function PodcastMenu() {
       <div className="DisplayCard">
         <div className="Card" id="left" data-aos="zoom-in" data-aos-delay="100">
           <a href="UnAthletic">
-            <img alt="UnAthletic" src={logo}></img>
+            <img alt="UnAthletic" src={unathletic}></img>
           </a>
           <p>UnAthletic</p>
         </div>
@@ -33,7 +35,7 @@ function PodcastMenu() {
           data-aos-delay="300"
         >
           <a href="A-Game-Talks">
-            <img alt="A-Game-Talks" src={logo}></img>
+            <img alt="A-Game-Talks" src={agametalks}></img>
           </a>
           <p>A-Game Talks</p>
         </div>

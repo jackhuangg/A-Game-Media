@@ -21,31 +21,50 @@ function About() {
       <div id="lower-education-container">
         <div className="left">
           <h4 id="color">Mission</h4>
-          <p>
+          <p id="about">
             To tell Authentic Stories that represent the Universal Language of
             Excellence.
           </p>
           <h4 id="color">Company Values</h4>
-          <ul>
-            <li>
-              <p>Authenticity</p>
-            </li>
-            <li>
-              <p>Persistence</p>
-            </li>
-            <li>
-              <p>Diversity</p>
-            </li>
-          </ul>
+          <div className="values">
+            <div>
+              <ul>
+                <li>
+                  <p>Authenticity</p>
+                </li>
+                <li>
+                  <p>Persistence</p>
+                </li>
+                <li>
+                  <p>Diversity</p>
+                </li>
+              </ul>
+            </div>
+            <div className="valuesend">
+              <ul>
+                <li>
+                  <p>Community</p>
+                </li>
+                <li>
+                  <p>Integrity</p>
+                </li>
+                <li>
+                  <p>Compassion</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          
         </div>
         <div className="right">
           <h4 id="color">Why & Vision</h4>
-          <p>
+          <p id="about">
             The concept of A-Game Media Co. was originally inspired back in
             2017. However, we have officially launched in January 2020, and
             haven’t looked back ever since.
           </p>
-          <p>
+          <p id="about">
             The inspiration for this venture came from a need in the media
             industry to be able to tell stories in an authentic fashion. In a
             time where “clickbait”, and buzzwords drive people’s attention

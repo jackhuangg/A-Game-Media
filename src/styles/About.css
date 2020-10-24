@@ -5,6 +5,12 @@
   padding: 10px 40px;
   border-radius: 15px;
 }
+.values {
+  display: flex;
+}
+.valuesend {
+  padding-left: 30px;
+}
 #padding {
   padding-left: 35px;
   padding-right: 35px;
@@ -54,8 +60,35 @@
   height: 238px;
 }
 @media (max-width: 1020px) {
+  .left {
+    width: 50%;
+  }
+  .right {
+    width: 50%;
+  }
   #lower-education-container {
     align-items: center;
     flex-direction: column;
+  }
+  #color {
+    text-align: center;
+  }
+  .values {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .valuesend {
+    padding: 0;
+  }
+  #about {
+    text-align: left;
+  }
+}
+@media (max-width: 900px) {
+  .left {
+    width: 80%;
+  }
+  .right {
+    width: 80%;
   }
 }

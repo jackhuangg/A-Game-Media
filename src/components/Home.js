@@ -91,18 +91,19 @@ function Home() {
       <div className="Connect">
         <p className="title">Upcoming Events</p>
         <div className="eventlist">
-          <Table responsive="sm" id="color">
+          <Table id="color">
             <thead>
               <tr>
-                <th>Date</th>
-                <th>Description</th>
+                
+                <th className="left">Description</th>
+                <th className="right">Date</th>
               </tr>
             </thead>
             <tbody>
               {Schedule.map((event) => (
                 <tr>
-                  <td>{event.date}</td>
-                  <td>{event.event}</td>
+                  <td className="left">{event.date}</td>
+                  <td className="right">{event.event}</td>
                 </tr>
               ))}
             </tbody>

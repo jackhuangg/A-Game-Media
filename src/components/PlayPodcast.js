@@ -15,15 +15,15 @@ function PlayPodcast(props) {
     <div className="MediaPlayer">
       <div className="audioplayer">
         <ReactWebMediaPlayer
-          width={450}
-          height={400}
+          width={300}
+          height={300}
           title={podcasttitle}
           thumbnail={`/${logo}.jpeg`}
           audio={mp4link}
         />
       </div>
       <div className="content">
-        <h2>{podcasttitle}</h2>
+        <h2 id="font">{podcasttitle}</h2>
         <p>{date}</p>
         <h5>{shownotes}</h5>
       </div>
