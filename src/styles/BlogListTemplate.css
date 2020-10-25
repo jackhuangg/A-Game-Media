@@ -18,6 +18,7 @@
 .BlogBlock h1 {
   margin-top: 8px;
   font-size: 21px;
+  height: 60px;
 }
 .BlogBlock p {
   font-size: 17px;

@@ -8,6 +8,7 @@ import Ahira from "../images/ahira.jpg";
 import Ananya from "../images/ananya.jpg";
 import Florentino from "../images/florentino.jpg";
 import Jack from "../images/jack.jpg";
+import linkedinlogo from '../images/linkedinlogo.png'
 
 function About() {
   useEffect(() => {
@@ -81,10 +82,9 @@ function About() {
       <div className="employee">
         <div className="eachemployee" data-aos="fade-in" data-aos-delay="200">
           <Card className="cards">
-            <a href="https://www.linkedin.com/in/ahdithanu/">
               <Card.Img variant="top" src={Ahdi} />
-            </a>
-            <Card.Body>
+              <a className="btn" href="https://www.linkedin.com/in/ahdithanu/"><img src={linkedinlogo} alt="logo" width="70px"/></a>
+              <Card.Body>
               <Card.Title className="font">Ahdithan U</Card.Title>
               <Card.Title className="font" style={{ fontSize: "15px" }}>
                 Co-Founder & Podcast Host
@@ -98,9 +98,8 @@ function About() {
         </div>
         <div className="eachemployee" data-aos="fade-in" data-aos-delay="300">
           <Card className="cards">
-            <a href="https://www.linkedin.com/in/ahira-foster-47b082a1/">
               <Card.Img variant="top" src={Ahira} />
-            </a>
+              <a className="btn" href="https://www.linkedin.com/in/ahira-foster-47b082a1/"><img src={linkedinlogo} alt="logo" width="70px"/></a>
             <Card.Body>
               <Card.Title className="font">Ahira F</Card.Title>
               <Card.Title className="font" style={{ fontSize: "15px" }}>
@@ -114,10 +113,9 @@ function About() {
           </Card>
         </div>
         <div className="eachemployee" data-aos="fade-in" data-aos-delay="400">
-          <Card className="cards">
-            <a href="https://www.linkedin.com/in/ananya-v/">
+          <Card className="cards"> 
               <Card.Img variant="top" src={Ananya} />
-            </a>
+              <a className="btn" href="https://www.linkedin.com/in/ananya-v/"><img src={linkedinlogo} alt="logo" width="70px"/></a>
             <Card.Body>
               <Card.Title className="font">Ananya V</Card.Title>
               <Card.Title className="font" style={{ fontSize: "15px" }}>
@@ -131,10 +129,9 @@ function About() {
           </Card>
         </div>
         <div className="eachemployee" data-aos="fade-in" data-aos-delay="500">
-          <Card className="cards">
-            <a href="https://www.linkedin.com/in/florentinolopez/">
+          <Card className="cards">    
               <Card.Img variant="top" src={Florentino} />
-            </a>
+              <a className="btn" href="https://www.linkedin.com/in/florentinolopez/"><img src={linkedinlogo} alt="logo" width="70px"/></a>
             <Card.Body>
               <Card.Title className="font">Florentino L</Card.Title>
               <Card.Title className="font" style={{ fontSize: "15px" }}>
@@ -149,9 +146,8 @@ function About() {
         </div>
         <div className="eachemployee" data-aos="fade-in" data-aos-delay="600">
           <Card className="cards">
-            <a href="https://www.linkedin.com/in/jackhuang0409/">
               <Card.Img variant="top" src={Jack} />
-            </a>
+              <a className="btn" href="https://www.linkedin.com/in/jackhuang0409/"><img src={linkedinlogo} alt="logo" width="70px"/></a>
             <Card.Body>
               <Card.Title className="font">Jack H</Card.Title>
               <Card.Title className="font" style={{ fontSize: "15px" }}>

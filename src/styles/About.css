@@ -84,6 +84,11 @@
     text-align: left;
   }
 }
+.btn {
+  position: absolute;
+  top: 39%;
+  right: 65%;
+}
 @media (max-width: 900px) {
   .left {
     width: 80%;

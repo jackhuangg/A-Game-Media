@@ -26,7 +26,6 @@ function PodcastMenu() {
           <a href="UnAthletic">
             <img alt="UnAthletic" src={unathletic}></img>
           </a>
-          <p>UnAthletic</p>
         </div>
         <div
           className="Card"
@@ -37,7 +36,6 @@ function PodcastMenu() {
           <a href="A-Game-Talks">
             <img alt="A-Game-Talks" src={agametalks}></img>
           </a>
-          <p>A-Game Talks</p>
         </div>
       </div>
     </div>

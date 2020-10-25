@@ -17,7 +17,6 @@ function PlayPodcast(props) {
         <ReactWebMediaPlayer
           width={300}
           height={300}
-          title={podcasttitle}
           thumbnail={`/${logo}.jpeg`}
           audio={mp4link}
         />
